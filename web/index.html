@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h1>
+        Fill this form
+    </h1>
+    <textarea name="ahtung" rows="3">Do NOT fill any real data</textarea>
+    <form action="/questionary"  method="POST">
+        Name:<br>
+        <input type="text" name="firstName" value="John">
+        <br>
+        Surename:<br>
+        <input type="text" name="lastName" value="Doe">
+        <br>
+        Gender:<br>
+        <input type="radio" name="sex" value="male" checked> Male
+        <br>
+        <input type="radio" name="sex" value="female"> Female
+        <br>
+        Your web-browser:<br>
+        <input list="browsers" name="browser" value="Chrome">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <br>
+        <br>
+        <input type="submit" value="Confirm">
+    </form>
+</body>
+</html>
